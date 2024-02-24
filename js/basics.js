@@ -82,6 +82,7 @@ const displayResults = ()=>{
     let isRaining = false;
     let fruits = ["Banana", "Mango", "Grapes"]
 
+    // object
     let car = {
         brand:"Toyota",
         model: "Harrier",
@@ -105,7 +106,44 @@ console.log(results)
 
 
 // 3. operators
+/*
+1. Arithmetic : includes -> addition, subtraction, multiplication, division
+2. Comparison : includes -> equality, inequality
+3. Logical : includes -> AND, OR
+4. Bitwise : includes -> AND, OR
+5. Ternary : includes -> ternary operator 
+6. Assignment : includes -> =, +=, -=
+7. Increment/Decrement : includes -> ++, --
+*/
 
+// 1. Arithmetic operators
+const readline = require('readline');
+const r1 = readline.createInterface({
+    input:process.stdin,
+    output:process.stdout
+})
+
+// r1.question('Enter something: ', (answer)=>{
+//     console.log('You\'ve entered : ', answer)
+//     r1.close();
+// })
+
+r1.question("Enter the first number: ",(a)=>{
+    r1.question("Enter the second number: ", (b)=>{
+    console.log("a :", a);
+    console.log("b: ", b);
+    a = parseInt(a);
+    b = parseInt(b);
+    let sum = a + b;
+    console.log(sum);
+    r1.close();
+ })
+})
+
+// let no1 = parseInt(prompt("Enter the first number: "))
+// let inputName = prompt("Enter your name: ");
+// console.log("Your name is : ", inputName);
+// let no2 = parseInt(prompt("Enter the second number: ")) 
 
 // 4. functions
 // 5. loops
